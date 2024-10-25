@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in (page)</title>
+</head>
+<style>
+    body {
+        font-family: monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        height: 100vh;
+        background-color: #fde3ab;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 10px 10px 15px rgb(0, 0, 0);
+    }
+    input::placeholder{
+        color: darkcyan;
+    }
+    input,button{
+        color: #fff;
+        background-color: #96c22f;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        border: 1px solid darkcyan;
+    }
+    button,#box{
+        border:1px solid darkcyan;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        background-color: cadetblue;
+    }
+    a{
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: lighter;
+        text-align: center;
+        color: white;
+    }
+</style>
+<body>
+    <body>
+        <form id="form">
+            <input type="text" id="log" placeholder="Enter Your ID">
+            <input type="text" id="pass" placeholder="Enter Your Password">
+            <button id="sub">SUBMIT</button>
+            <div id="box">
+                <a id="fors" style="display:none;" href="index.html" target="_blank">TON</a>
+            </div>
+        </form>   
+    <script>
+        const sub = document.querySelector('#sub')
+        const pass = document.querySelector('#pass')
+        const log = document.querySelector('#log')
+        const form = document.querySelector('#form');
+        const fors = document.querySelector('#fors');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            if (pass.value  === password && log.value  === id) {
+                alert( 'Login successful')
+                fors.style.display = "block"
+            } else{
+                alert('Invalid ID or Password')
+                pass.value = ''
+                log.value = ''
+                fors.style.display = "none"
+                sub.style.disable = true
+                sub.style.backgroundColor = 'darkred'
+                pass.style.backgroundColor = 'darkred'
+                log.style.backgroundColor = 'darkred'
+                fors.style.backgroundColor = 'darkred'
+                pass.style.disable = true
+                log.style.disable = true
+                
+            }
+        },)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let password = ('0077554')
+let id = ('user662')
+    </script>
+</body>
+</html>
